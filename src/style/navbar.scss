@@ -1,0 +1,33 @@
+.navContainer {
+    padding-block: 10px;
+    border-bottom: 1px solid #ccc;
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        li {
+            a {
+                color: #12489b;
+                text-decoration: none;
+                &::after {
+                    content: ">";
+                    color: #949aa8;
+                    margin-left: 10px;
+                }
+            }
+            &:last-child {
+                a {
+                    color: #949aa8;
+                    cursor: unset;
+                    &::after {
+                        content: unset;
+                        color: #949aa8;
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
